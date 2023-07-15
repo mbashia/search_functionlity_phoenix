@@ -1,0 +1,18 @@
+<h1>Show Header</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @header.title %>
+  </li>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @header.body %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.header_path(@conn, :edit, @header) %></span> |
+<span><%= link "Back", to: Routes.header_path(@conn, :index) %></span>
