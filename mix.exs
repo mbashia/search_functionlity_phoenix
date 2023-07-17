@@ -50,7 +50,9 @@ defmodule Project.MixProject do
       {:jason, "~> 1.2", override: true},
       {:plug_cowboy, "~> 2.5", override: true},
       {:rummage_phoenix, "~> 2.0.0", override: true},
-      {:rummage_ecto, "~> 2.0.0", override: true}
+      {:rummage_ecto, "~> 2.0.0", override: true},
+      {:ex_heroicons, "~> 2.0.0", override: true}
+
     ]
   end
 

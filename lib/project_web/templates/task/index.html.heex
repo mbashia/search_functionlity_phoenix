@@ -13,6 +13,8 @@
   <tbody>
 <%= for task <- @tasks do %>
     <tr>
+<%= Heroicons.icon("x-mark", type: "outline", class: "h-2 w-2", style: "color: green;" )%>
+
       <td><%= task.title %></td>
       <td><%= task.body %></td>
 
