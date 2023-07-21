@@ -1,6 +1,5 @@
 defmodule ProjectWeb.TaskController do
   use ProjectWeb, :controller
-  use Rummage.Phoenix.Controller
   alias Project.Repo
 
   alias Project.Tasks

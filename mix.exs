@@ -20,7 +20,7 @@ defmodule Project.MixProject do
   def application do
     [
       mod: {Project.Application, []},
-      extra_applications: [:logger, :runtime_tools, :rummage_ecto, :rummage_phoenix]
+      extra_applications: [:logger, :runtime_tools]
     ]
   end
 
@@ -33,6 +33,7 @@ defmodule Project.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:bcrypt_elixir, "~> 3.0"},
       {:phoenix, "~> 1.6.0", override: true},
       {:phoenix_ecto, "~> 4.4", override: true},
       {:ecto_sql, "~> 3.6", override: true},
@@ -49,7 +50,7 @@ defmodule Project.MixProject do
       {:gettext, "~> 0.18", override: true},
       {:jason, "~> 1.2", override: true},
       {:plug_cowboy, "~> 2.5", override: true},
-      {:rummage_phoenix, "~> 2.0.0", override: true},
+
       {:rummage_ecto, "~> 2.0.0", override: true},
       {:ex_heroicons, "~> 2.0.0", override: true}
 
